@@ -6,7 +6,6 @@
         <el-container>
             <el-header class="header">
                 <el-affix>
-                    <BaseHeader></BaseHeader>
                 </el-affix>
             </el-header>
             <el-container>
