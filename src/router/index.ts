@@ -17,6 +17,12 @@ const routes: Array<RouteRecordRaw> = [
                 path: '/concat',
                 component: () => import("../components/Concat.vue"),
                 redirect: '/index',
+                children: [
+                    {
+                        path: '/index',
+                        component: () => import("../components/IndexPage.vue")
+                    }
+                ]
             }
         ]
     },

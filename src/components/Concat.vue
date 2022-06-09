@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+
+import BaseHeader from './nav/BaseHeader.vue'
+import LeftNav from './nav/LeftNav.vue'
 </script>
 
 <template>
@@ -6,27 +10,23 @@
         <el-container>
             <el-header class="header">
                 <el-affix>
+                    <BaseHeader></BaseHeader>
                 </el-affix>
             </el-header>
             <el-container>
                 <el-aside width="200px">
+                    <LeftNav></LeftNav>
                 </el-aside>
-                <el-main></el-main>
+                <el-main>
+                    <router-view></router-view>
+                </el-main>
             </el-container>
         </el-container>
     </div>
 </template>
 
 <style scoped lang="scss">
-    .header, .footer {
-        padding: 0;
-    }
-    ::v-deep(.header) {
-        .el-affix--fixed {
-            background-color: #ffffff;
-        }
-    }
-    .main {
+    .header {
         padding: 0;
     }
 </style>
