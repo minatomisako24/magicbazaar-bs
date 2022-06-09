@@ -8,7 +8,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "@element-plus/icons-vue": "^2.0.4",
+    "axios": "^0.27.2",
+    "element-plus": "^2.2.5",
+    "naive-ui": "^2.30.3",
+    "pinia": "^2.0.14",
+    "sass": "^1.52.3",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.15",
+    "vue3-slide-verify": "^1.1.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
