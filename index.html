@@ -9,5 +9,50 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <script type="text/javascript" src="https://cos-1312256436.cos.ap-shanghai.myqcloud.com/magicbazaar/static/live2d/bin/l2dwidget.min.js"></script>
+    <script type="text/javascript">
+      const config = {
+        pluginRootPath: 'static/live2d/',
+        pluginJsPath: 'assets/libs/',
+        pluginModelPath: 'live2d-widget-model-shizuku/assets/',
+        tagMode: false,
+        debug: false,
+        name:{
+            canvas: 'MId'
+        },
+        model: {
+            jsonPath: 'static/live2d/live2d-widget-model-shizuku/assets/shizuku.model.json',
+            scale: 1,
+        },
+        display: { 
+            superSample: 2,
+            position: 'right',
+            width: 100,
+            height: 150,
+            hOffset: -20,
+            vOffset: -40,
+
+        },
+        react:{
+            opacityDefault: 1,
+            opacityOnHover: 0.5
+        },
+        dev:{
+            border: false,
+        },
+        mobile: { 
+            show: true,
+            scale: 0.5,
+            motion: true,
+        },
+        log: false,
+        dialog:{
+            enable: false,
+            hitokoto: false,
+        }
+      }
+
+      L2Dwidget.init(config)
+    </script>
   </body>
 </html>
