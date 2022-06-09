@@ -8,9 +8,10 @@ const handleSelect = () => {
 
 <template>
     <el-menu
-    default-active="1"
+    :default-active="$route.path"
     mode="horizontal"
     :ellipsis="false"
+    router
     @select="handleSelect"
     >
         <el-menu-item index="1">LOGO</el-menu-item>

@@ -17,8 +17,9 @@ const handleClose = () => {
 <template>
     <div class="left-nav">
         <el-menu
-        default-active="1"
+        :default-active="$route.path"
         :collapse="turnOff"
+        router
         @open="handleOpen"
         @close="handleClose"
         >
@@ -26,24 +27,39 @@ const handleClose = () => {
                 <el-icon><Operation /></el-icon>
                 <template #title>侧边栏</template>
             </el-menu-item>
-            <el-sub-menu index="1">
+            <el-sub-menu index="">
                 <template #title>
                     <el-icon><location /></el-icon>
-                    <span>Navigator One</span>
+                    <span>表单</span>
                 </template>
                 <el-menu-item-group>
                     <template #title><span>Group One</span></template>
-                    <el-menu-item index="1-1">item one</el-menu-item>
-                    <el-menu-item index="1-2">item two</el-menu-item>
-                </el-menu-item-group>
-                <el-menu-item-group title="Group Two">
-                    <el-menu-item index="1-3">item three</el-menu-item>
+                    <el-menu-item index="/simple/form">基本表单</el-menu-item>
+                    <el-menu-item index="/step/form">分布表单</el-menu-item>
                 </el-menu-item-group>
             </el-sub-menu>
-            <el-menu-item index="4">
-                <el-icon><setting /></el-icon>
-                <template #title>Navigator Four</template>
-            </el-menu-item>
+             <el-sub-menu index="2">
+                <template #title>
+                    <el-icon><location /></el-icon>
+                    <span>表格</span>
+                </template>
+                <el-menu-item-group>
+                    <template #title><span>Group One</span></template>
+                    <el-menu-item index="2-1-1">基本表格</el-menu-item>
+                    <el-menu-item index="2-1-2">item two</el-menu-item>
+                </el-menu-item-group>
+            </el-sub-menu>
+             <el-sub-menu index="3">
+                <template #title>
+                    <el-icon><location /></el-icon>
+                    <span>视图</span>
+                </template>
+                <el-menu-item-group>
+                    <template #title><span>Group One</span></template>
+                    <el-menu-item index="3-1-1">item one</el-menu-item>
+                    <el-menu-item index="3-1-2">item two</el-menu-item>
+                </el-menu-item-group>
+            </el-sub-menu>
         </el-menu>
     </div>
 </template>

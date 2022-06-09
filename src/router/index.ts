@@ -20,8 +20,16 @@ const routes: Array<RouteRecordRaw> = [
                 children: [
                     {
                         path: '/index',
-                        component: () => import("../components/IndexPage.vue")
-                    }
+                        component: () => import("../components/IndexPage.vue"),
+                    },
+                    {
+                        path: '/simple/form',
+                        component: () => import("../components/form/SimpleForm.vue"),
+                    },
+                    {
+                        path: '/step/form',
+                        component: () => import("../components/form/StepForm.vue"),
+                    },
                 ]
             }
         ]
