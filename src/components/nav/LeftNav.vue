@@ -9,8 +9,12 @@ const handleOpen = () => {
 
 }
 
-const handleClose = () => {
 
+const handleClose = () => {
+}
+
+const handleSelect = (index: string, indexPath: Array<string>, item: any, routeResult: string) => {
+    console.log(index, indexPath, item, routeResult)
 }
 </script>
 
@@ -22,12 +26,13 @@ const handleClose = () => {
         router
         @open="handleOpen"
         @close="handleClose"
+        @select="handleSelect"
         >
             <el-menu-item index="" :onclick="changeTurnOff" style="color: black;">
                 <el-icon><Operation /></el-icon>
                 <template #title>侧边栏</template>
             </el-menu-item>
-            <el-sub-menu index="">
+            <el-sub-menu index="form">
                 <template #title>
                     <el-icon><location /></el-icon>
                     <span>表单</span>
@@ -36,27 +41,30 @@ const handleClose = () => {
                     <template #title><span>Group One</span></template>
                     <el-menu-item index="/simple/form">基本表单</el-menu-item>
                     <el-menu-item index="/step/form">分布表单</el-menu-item>
+                    <el-menu-item index="/child/form">子表单</el-menu-item>
+                    <el-menu-item index="/transfer/form">穿梭表单</el-menu-item>
                 </el-menu-item-group>
             </el-sub-menu>
-             <el-sub-menu index="2">
+             <el-sub-menu index="table">
                 <template #title>
                     <el-icon><location /></el-icon>
                     <span>表格</span>
                 </template>
                 <el-menu-item-group>
                     <template #title><span>Group One</span></template>
-                    <el-menu-item index="2-1-1">基本表格</el-menu-item>
-                    <el-menu-item index="2-1-2">item two</el-menu-item>
+                    <el-menu-item index="/simple/table">基本表格</el-menu-item>
+                    <el-menu-item index="/head/table">表头表格</el-menu-item>
+                    <el-menu-item index="/count/table">统计表格</el-menu-item>
                 </el-menu-item-group>
             </el-sub-menu>
-             <el-sub-menu index="3">
+             <el-sub-menu index="echart">
                 <template #title>
                     <el-icon><location /></el-icon>
                     <span>视图</span>
                 </template>
                 <el-menu-item-group>
                     <template #title><span>Group One</span></template>
-                    <el-menu-item index="3-1-1">item one</el-menu-item>
+                    <el-menu-item index="/simple/echart">普通视图</el-menu-item>
                     <el-menu-item index="3-1-2">item two</el-menu-item>
                 </el-menu-item-group>
             </el-sub-menu>

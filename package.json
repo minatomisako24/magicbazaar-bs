@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.4",
+    "animate.css": "^4.1.1",
     "axios": "^0.27.2",
+    "echarts": "^5.3.2",
     "element-plus": "^2.2.5",
     "naive-ui": "^2.30.3",
     "pinia": "^2.0.14",

@@ -30,6 +30,26 @@ const routes: Array<RouteRecordRaw> = [
                         path: '/step/form',
                         component: () => import("../components/form/StepForm.vue"),
                     },
+                    {
+                        path: '/child/form',
+                        component: () => import("../components/form/ChildForm.vue"),
+                    },
+                    {
+                        path: '/transfer/form',
+                        component: () => import("../components/form/TransferForm.vue"),
+                    },
+                    {
+                        path: '/simple/table',
+                        component: () => import("../components/table/SimpleTable.vue"),
+                    },
+                    {
+                        path: '/head/table',
+                        component: () => import("../components/table/HeadTable.vue"),
+                    },
+                    {
+                        path: '/count/table',
+                        component: () => import("../components/table/CountTable.vue"),
+                    },
                 ]
             }
         ]

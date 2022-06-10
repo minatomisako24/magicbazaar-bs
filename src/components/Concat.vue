@@ -14,7 +14,7 @@ import LeftNav from './nav/LeftNav.vue'
                 </el-affix>
             </el-header>
             <el-container>
-                <el-aside width="200px">
+                <el-aside width="200px" style="z-index: 100;">
                     <LeftNav></LeftNav>
                 </el-aside>
                 <el-main>

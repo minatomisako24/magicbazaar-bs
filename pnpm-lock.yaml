@@ -3,7 +3,9 @@ lockfileVersion: 5.4
 specifiers:
   '@element-plus/icons-vue': ^2.0.4
   '@vitejs/plugin-vue': ^2.3.3
+  animate.css: ^4.1.1
   axios: ^0.27.2
+  echarts: ^5.3.2
   element-plus: ^2.2.5
   naive-ui: ^2.30.3
   pinia: ^2.0.14
@@ -17,7 +19,9 @@ specifiers:
 
 dependencies:
   '@element-plus/icons-vue': 2.0.4_vue@3.2.36
+  animate.css: 4.1.1
   axios: 0.27.2
+  echarts: 5.3.2
   element-plus: 2.2.5_vue@3.2.36
   naive-ui: 2.30.3_vue@3.2.36
   pinia: 2.0.14_hxrfy3rdja4lhsamokddlc63fi
@@ -286,6 +290,10 @@ packages:
       vue-demi: 0.13.1_vue@3.2.36
     dev: false
 
+  /animate.css/4.1.1:
+    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
+    dev: false
+
   /ansi-regex/5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
@@ -417,6 +425,13 @@ packages:
   /diff-sequences/27.5.1:
     resolution: {integrity: sha512-k1gCAXAsNgLwEL+Y8Wvl+M6oEFj5bgazfZULpS5CneoPPXRaCCW7dm+q21Ky2VEE5X+VeRDBVg1Pcvvsr4TtNQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    dev: false
+
+  /echarts/5.3.2:
+    resolution: {integrity: sha512-LWCt7ohOKdJqyiBJ0OGBmE9szLdfA9sGcsMEi+GGoc6+Xo75C+BkcT/6NNGRHAWtnQl2fNow05AQjznpap28TQ==}
+    dependencies:
+      tslib: 2.3.0
+      zrender: 5.3.1
     dev: false
 
   /element-plus/2.2.5_vue@3.2.36:
@@ -980,6 +995,10 @@ packages:
     resolution: {integrity: sha512-M8RGFoKtZ8dF+iwJfAJTOH/SM4KluKOKRJpjCMhI8bG3qB74zrFoArKZ62ll0Fr3mqkMJiQOmWYkdYgDeITYQg==}
     dev: false
 
+  /tslib/2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+    dev: false
+
   /typescript/4.7.3:
     resolution: {integrity: sha512-WOkT3XYvrpXx4vMMqlD+8R8R37fZkjyLGlxavMc4iB8lrl8L0DeTcHbYgw/v0N/z9wAFsgBhcsF0ruoySS22mA==}
     engines: {node: '>=4.2.0'}
@@ -1090,4 +1109,10 @@ packages:
       vdirs: 0.1.8_vue@3.2.36
       vooks: 0.2.12_vue@3.2.36
       vue: 3.2.36
+    dev: false
+
+  /zrender/5.3.1:
+    resolution: {integrity: sha512-7olqIjy0gWfznKr6vgfnGBk7y4UtdMvdwFmK92vVQsQeDPyzkHW1OlrLEKg6GHz1W5ePf0FeN1q2vkl/HFqhXw==}
+    dependencies:
+      tslib: 2.3.0
     dev: false

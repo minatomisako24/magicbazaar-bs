@@ -97,7 +97,6 @@ const resetForm = (from: FormInstance | undefined) => {
         status-icon
         :rules="rules"
         label-width="120px"
-        class="demo-ruleForm"
         >
             <el-form-item label="Password" prop="pass">
                 <el-input v-model="ruleForm.pass" type="password" autocomplete="off" show-password />
