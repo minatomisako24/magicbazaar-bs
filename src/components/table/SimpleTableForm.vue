@@ -1,9 +1,16 @@
 <script setup lang="ts">
-import { FormInstance, FormRules } from 'element-plus'
-import { ref, reactive } from 'vue'
+import { FormInstance, FormRules, ElMessageBox } from 'element-plus'
+import { ref, reactive, watch, computed } from 'vue'
+
+interface User {
+    date: string,
+    name: string,
+    address: string
+}
 
 const props = defineProps<{
-    dialogFormVisible: boolean
+    dialogFormVisible: boolean,
+    user: User
 }>()
 
 const emits = defineEmits([
@@ -11,10 +18,9 @@ const emits = defineEmits([
 ])
 
 const fromRef = ref<FormInstance>()
-const form = reactive({
-    name: '',
-    region: ''
-})
+const form = reactive(computed(() => {
+    return props.user
+}))
 
 </script>
 
@@ -26,7 +32,7 @@ const form = reactive({
                     <el-input v-model="form.name" autocomplete="off" />
                 </el-form-item>
                 <el-form-item label="Zones">
-                    <el-select v-model="form.region" placeholder="Please select a zone">
+                    <el-select v-model="form.date" placeholder="Please select a zone">
                         <el-option label="Zone No.1" value="shanghai" />
                         <el-option label="Zone No.2" value="beijing" />
                     </el-select>

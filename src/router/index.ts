@@ -50,6 +50,22 @@ const routes: Array<RouteRecordRaw> = [
                         path: '/count/table',
                         component: () => import("../components/table/CountTable.vue"),
                     },
+                    {
+                        path: '/simple/echart',
+                        component: () => import("../components/view/SimpleEchart.vue"),
+                    },
+                    {
+                        path: '/move/echart',
+                        component: () => import("../components/view/MoveEchart.vue"),
+                    },
+                    {
+                        path: '/party/echart',
+                        component: () => import("../components/view/PartyEchart.vue"),
+                    },
+                    {
+                        path: '/view/echart',
+                        component: () => import("../components/view/ViewEchart.vue"),
+                    },
                 ]
             }
         ]

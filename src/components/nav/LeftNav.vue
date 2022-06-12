@@ -65,7 +65,9 @@ const handleSelect = (index: string, indexPath: Array<string>, item: any, routeR
                 <el-menu-item-group>
                     <template #title><span>Group One</span></template>
                     <el-menu-item index="/simple/echart">普通视图</el-menu-item>
-                    <el-menu-item index="3-1-2">item two</el-menu-item>
+                    <el-menu-item index="/move/echart">动态视图</el-menu-item>
+                    <el-menu-item index="/party/echart">形状视图</el-menu-item>
+                    <el-menu-item index="/view/echart">可视化视图</el-menu-item>
                 </el-menu-item-group>
             </el-sub-menu>
         </el-menu>
